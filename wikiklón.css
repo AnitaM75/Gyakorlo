@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+  
+body {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0; 
+    top: 0;
+    left: 0;
+
+}
+
+header {
+ 
+    text-align: center; 
+    padding: 5px;
+    background-color:wheat;
+    color: purple;
+    margin-bottom: 10px;
+     
+}
+
+section {
+    
+    margin-bottom: 10px;
+    background-color: rgb(73, 211, 236);
+    border-radius: 165px;
+    
+}
+section:hover {
+    background-color: rgb(154, 205, 50 ,0.4)
+      
+}
+ 
+h2 {  
+    color: rgb(205, 34, 48);
+    font-size:xx-large;
+    margin-left: 120px;
+   
+   
+}
+ 
+#content h2:hover {
+    animation: billeges 0.5s ease infinite; 
+    cursor:pointer; 
+    color: black;
+}
+@keyframes billeges {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+h3 {
+    color: black;
+    font-size: large
+   
+}
+h3:hover {
+    color: white;
+    background-color: rgb(175, 18, 18);
+    border-radius: 8px;
+    animation: spin 5s linear infinite;
+
+
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    color: rgb(226, 146, 33);
+    text-decoration: none;
+}
+
+a:hover {
+    
+    background-color: black;
+    color: white;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content:center;
+    flex-direction: row;
+     
+}
+
+.card {
+    width: 100px; 
+    height: 130px; 
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(105, 3, 83);
+    margin: 30px;
+    overflow: hidden;
+    background-color: rgb(248, 168, 136); 
+    transition: background-color 0.5s ease;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.card:hover{
+    background-color: deepskyblue;
+    transform: scale(1.5);
+    transition-duration: 50ms; 
+}
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 30px; 
+    margin-bottom: 15px;
+    color: black; 
+    transition: color 0.7s ease; 
+}
+
+.card-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: black;
+    color: white; 
+    transition: background-color 0.7s ease, color 0.5s ease;
+}
+.card-link:hover{
+    background-color: brown;
+    color: rgb(240, 246, 50);
+}
+
+#Progmatic{
+    color: purple;
+    text-decoration: none;
+}
+
+.Táblázat {
+    border: 2px solid black; 
+    border-collapse: collapse; 
+    height: 400px;
+    width: 90%; 
+    margin: 20px auto; 
+    background-color: aqua;
+    text-decoration: none;
+}
+
+
+.Táblázat td {
+    border: 2xp solid black;
+    padding: 10px;
+    vertical-align:middle; 
+    margin: 10px;
+    text-decoration: none;
+}
+
+.Táblázat a {
+    text-decoration:none;
+    font-size: large;
+    
+}
+.Táblázat b {
+    text-decoration: underline;
+
+}
+.Táblázat p {
+    color: blueviolet;
+    border: solid black;
+}
+
+.text {
+    text-align: center; 
+    color: coral;
+    font-size: x-large;
+    
+    
+}
+.title {
+    color: #7b10df;
+    font-style: italic;
+    font-size: xx-large;
+}
+#Képzés {
+    border: solid blueviolet;
+    font-size: larger;
+    color: brown;
+    background-color: grey;
+    height: 80xp;   
+}
+
+.Vége a {
+    text-decoration: none;
+}
+.Vége a:hover {
+    background-color: rgb(56, 234, 240);
+    color: rgb(230, 71, 22);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: wheat;
+    color: purple;
+}
+.P {
+    border: 2px solid black; 
+    border-collapse: collapse; 
+    height: 500xp;
+    width: 40%; 
+    margin: 20px auto; 
+    background-color: rgb(241, 241, 64 , 0.3);
+    text-decoration: none;
+    position: fixed;
+    right: 5px;
+    top: 25%;
+    z-index: -10;
+    
+    
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color:palevioletred;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.alert:hover + .tooltip {
+    display: block
+    
+    
+}
+  
+  
